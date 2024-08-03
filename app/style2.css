@@ -1,0 +1,219 @@
+h1 {
+    color: #000;
+    text-align: justify;
+    font-size: 17px;
+  }
+  .formulario-registro {
+    width: 90%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    font-family: 'calibri';
+    color: white;
+    font-size: 15px;
+    box-shadow: 7px 13px 37px #000;
+    text-align: center;
+  }
+  .formulario-registro h4 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  .formulario-registro img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .controles {
+    width: 100%;
+    background: #ffffff;
+    padding: 11px;
+    border-radius: 9px;
+    margin-bottom: 15px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: left; 
+  }
+  .contenedor-contraseña {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .contenedor-contraseña input {
+    width: 100%;
+    padding-right: 40px; 
+  }
+  .contenedor-contraseña i {
+    position: absolute;
+    right: 10px;
+    height: 50%;
+    cursor: pointer;
+    color: #000000;
+  }
+  .formulario-registro .botones {
+    width: 80%;
+    max-width: 200px;
+    padding: 12px;
+    color: white;
+    margin: 9px auto;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #3653f8;
+    display: block; 
+  }
+  
+  .botones:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgb(0, 0, 0);
+  }
+  .encabezado {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 75px;
+    padding: 5px 5%;
+  }
+  
+  .encabezado .logo {
+    cursor: pointer;
+    margin-right: auto;
+  }
+  
+  .encabezado .logo img {
+    height: 65px;
+    width: auto;
+    transition: all 0.3s;
+  }
+  .encabezado .logo img:hover {
+    transform: scale(1.2);
+  }
+  .encabezado .enlaces-nav {
+    list-style: none;
+  }
+  .encabezado .enlaces-nav li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .encabezado .enlaces-nav li:hover {
+    transform: scale(1.1);
+  }
+  
+  .encabezado .enlaces-nav a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+  }
+  .encabezado .btn button {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .encabezado .btn button:hover {
+    background-color: #e2f1f8;
+    color: #ff0000;
+    transform: scale(1.1);
+  }
+  .popup {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(255, 255, 255);
+      background-color: rgba(0, 0, 0, 0.562);   
+  }
+  .contenido-popup {
+      background-color: #fefefe;
+      margin: 10% auto;
+      border-radius: 15px;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 360px;
+      box-shadow: 7px 13px 37px #000;
+  }
+  .btn-cerrar {
+      color: #000000;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  .btn-cerrar:hover,
+  .btn-cerrar:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  label {
+      margin-top: 10px;
+      text-align: justify;
+  }
+  h2{
+    font-size: 26px;
+    text-align: center;
+  }
+  input {
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border-radius: 9px;
+      margin-bottom: 15px;
+      border: 1px solid #1f53c5;
+  }
+  button[type="submit"] {
+    width: 80%;
+    max-width: 200px;
+    padding: 12px;
+    color: white;
+    margin: 9px auto;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #3653f8;
+    display: block;
+  }
+  button:hover[type="submit"]{
+    color: #000;
+  }
+  
+  @media (min-width: 768px) {
+    .formulario-registro {
+      width: 450px;
+    }
+    .formulario-registro .botones {
+      width: 40%;
+    }
+    .contenido-popup {
+      width: 360px;
+    }
+    button[type="submit"] {
+      width: 40%;
+    }
+  }
